@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM FONTS-->
+    
+    <!--ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--FIM ICONS-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Porti<span>fólio</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#Início" class="active">Início</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Conquistas">Conquistas</a>
+            <a href="#Portifólio">Portifólio</a>
+            <!--<a href="#Contato">Contato</a>-->
+        </nav>
+    </header>
+    <section class="home" id="Início">
+        <div class="home-content">
+            <h3>Olá, eu sou</h3>
+            <h1>Paulo Henrique de Morais</h1>
+            <h3>Trilhando o caminho - <span>Engenharia da Computação</span></h3>
+            <p></p>
+            <div class="social-media">
+                <a href="https://www.youtube.com/@Paulomorais0903"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.instagram.com/pauleraprojects/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://wa.me/5549999206844"><i class='bx bx-phone'></i></a>
+                <a href="https://www.linkedin.com/in/paulo-morais-54838824a/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Paulera18"><i class='bx bxl-github'></i></a>
+            </div>
+            <button class="btn" onclick="downloadArquivo()">Baixar Currículo</button>
+
+            <script>
+                function downloadArquivo() {
+                    var link = document.createElement('a');
+                    link.href = 'arquivos/curriculo.pdf';
+                    link.download = 'Curriculo_Paulo.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+        </div>
+
+        <div class="home-img">
+            <img src="images/fp.png" alt="foto perfil">
+        </div>
+    </section>
+
+    <section class="about" id="Sobre">
+        <div class="about-img">
+            <img src="images/ppp.png" alt="foto perfil">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Paulo</span></h2>
+            <h3></h3>
+            <p>Olá, sou Paulo Henrique de Morais, estudante de Engenharia da Computação na UNOESC. Busco aprimorar minhas habilidades como desenvolvedor, apaixonado por robótica e programação, motivado para contribuir em projetos inovadores. Hoje faço parte do grupo de robótica da universidade, buscando crescer na área da tecnologia. </p>
+        </div>
+    </section>
+    
+    <section class="conquistas" id="Conquistas">
+        <h2 class="heading">Minhas <span>Conquistas</span></h2>
+    
+        <div class="conquistas-container">
+            <div class="conquistas-box">
+                <i class='bx bxs-star'></i>
+                <h3>Tiro de Guerra</h3>
+                <p>Destaque entre 50 jovens pelo companheirismo, iniciativa, liderança e trabalho em equipe...</p>
+                <a href="https://www.linkedin.com/posts/paulomorais18_quem-n%C3%A3o-%C3%A9-visto-n%C3%A3o-%C3%A9-lembrado-este-activity-7150524307754889217-APCt?utm_source=share&utm_medium=member_desktop" class="btn">Leia mais</a>
+            </div>
+    <!--
+            <div class="conquistas-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Tiro de Guerra</h3>
+                <p>asd sdasdasdas dasdasdas asdasdad asdasd asadasd asdsadas sdads adasd asdasd sadasd asd asdas das asd das da dsa</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+    
+            <div class="conquistas-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Tiro de Guerra</h3>
+                <p>asd sdasdasdas dasdasdas asdasdad asdasd asadasd asdsadas sdads adasd asdasd sadasd asd asdas das asd das da dsa</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+    -->
+        </div>
+    </section>
+
+    <section class="portifolio" id="Portifólio">
+        <h2 class="heading">Últimos <span>projetos</span></h2>
+        <div class="portifolio-container">
+            <div class="portifolio-box">
+                <img src="images/calculadora.png" alt="calculadora" class="portifolio-img">
+                <div class="portifolio-layer">        
+                    <h4><i class='bx bxl-python'></i><i class='bx bxl-html5'></i><i class='bx bxl-css3'></i><br>Calculadora</h4>
+                    <p>Projeto simulação calculadora simples com front-end</p>
+                    <a href="#"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+
+            <div class="portifolio-box">
+                <img src="images/braco.jpeg" alt="#" class="portifolio-img">
+                <div class="portifolio-layer">
+                    <h4><i class='bx bxl-c-plus-plus'></i><br>Braço Robótico</h4>
+                    <p>Desenvolvimento de um braço robótico que utiliza potenciometros para controlar os servos motores</p>
+                    <a href="#"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+
+            <div class="portifolio-box">
+                <img src="images/genius.jpeg" alt="#" class="portifolio-img">
+                <div class="portifolio-layer">
+                    <h4><i class='bx bxl-c-plus-plus'></i><br>Jogo da memória</h4>
+                    <p>Desenvolvimento do jogo Genius, jogo esse que testa a memória dos jogadores</p>
+                    <a href="#"><i class='bx bx-link'></i></a>
+                </div>
+            </div> 
+        </div>
+    </section>
+   
+       <!-- <form action="/enviar-mensagem" method="post">
+            <div class="input-box">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="telefone" placeholder="Telefone">
+                <input type="text" name="assunto" placeholder="Assunto">
+            </div>
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+            <input type="submit" value="Enviar mensagem" class="btn">
+        </form>
+    </section>-->
+   
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2024 por Paulo Henrique de Morais</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#Início"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
